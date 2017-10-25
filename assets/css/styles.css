@@ -16,3 +16,8 @@ body {
     font-weight: 200;
     margin-bottom: 120px;
 }
+
+#content-row h6 {
+    font-weight: 200;
+    color: #e62b1e;
+}
