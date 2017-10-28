@@ -1,0 +1,322 @@
+/*
+    ==========
+    Typography
+    ==========
+*/
+
+.font-wt-200 {
+    font-weight: 200;
+}
+.font-tedx-red {
+    color: #e62b1e;
+}
+
+
+/*  =============
+    Navbar styles
+    =============
+*/
+
+/* Overriding bootstrap styles */
+.navbar-dark .navbar-text .fa {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-dark .navbar-text .fa:hover {
+    color: #e62b1e;
+}
+
+
+/*  ===================
+    Landing page styles
+    ===================
+*/
+.my-landing-page-container{
+    height: 91vh;
+    position: relative;
+}
+
+.my-landing-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+}
+
+.landing-text {
+    border: 4px solid #fff;
+    padding: 1rem;
+}
+
+/*
+    ======================
+    Countdown clock styles
+    ======================
+*/
+
+#countdown-clock {
+    list-style: none;
+}
+
+#countdown-clock li {
+    display: inline-block; 
+}
+
+#countdown-clock .count {
+    color: #fff;
+    font-size: 3rem;
+}
+
+#countdown-clock .count:hover {
+    color: #e62b1e;
+}
+
+#countdown-clock .unit {
+    color: #ccc;
+}
+
+/*
+    ============
+    Theme styles
+    ============
+*/
+
+.theme-image-holder {
+    width: 100%;
+    height: 350px;
+}
+
+.theme-image-holder img {
+    object-fit: cover;
+    object-position: top;
+}
+
+
+/*  ==================
+    Feature row styles
+    ==================
+*/
+
+.my-row-feature {
+    background: #000;
+}
+.my-row-feature h2 {
+    color: #e62b1e;
+}
+.my-row-feature p{
+    color: #fff;
+}
+
+
+/*
+    ==================
+    Article Row Styles
+    ==================
+*/
+
+.my-article-row .btn {
+    color: #e62b1e;
+    border-color: #e62b1e;
+    border-radius: 10rem;
+}
+
+.my-article-row .btn:hover {
+    color: #fff;
+    background-color: #e62b1e;
+}
+
+.my-article-image img {
+    object-position: center;
+    object-fit: cover;
+}
+
+.my-article-row {
+    width: 100%;
+}
+
+.my-article-row:last-child {
+    border-bottom: 0;
+}
+
+
+/*
+    =============
+    Speaker styles
+    =============
+*/
+
+.speaker-columns {
+    padding: 10px;
+}
+
+.speaker-columns > div {
+    border: 2px solid #e62b1e;
+    color: #fff;
+    padding: 15px;
+}
+
+.speaker-columns .speaker-image-holder {
+    height: 300px;
+    width: 100%;
+}
+
+.speaker-image-holder img {
+    object-position: center;
+    object-fit: cover;
+}
+
+.speaker-columns h5 {
+    font-weight: 200;
+}
+
+.speaker-columns .fa {
+    font-size: 1.3rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.speaker-columns .fa:hover {
+    color: #e62b1e;
+}
+
+.speakers-section {
+    background: #000;
+}
+
+
+/*
+    ==================
+    Address row styles
+    ==================
+*/
+
+.my-address-row {
+    height: 100vh;
+}
+
+.my-address-row h2 {
+    font-weight: 200;
+}
+
+.my-address-row .map-holder {
+    min-height: 50vh;
+}
+
+/*
+    =============
+    Footer styles
+    =============
+*/
+
+.my-site-footer {
+    background: #000;
+    color: #fff;
+}
+
+.my-site-footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.my-site-footer img {
+    width: 300px;
+}
+
+.my-site-footer ul {
+    list-style: none;
+}
+
+.my-site-footer a {
+    font-size: 20px;
+}
+
+.my-site-footer a:hover {
+    color: #e62b1e;
+    text-decoration: none;
+}
+
+.my-site-footer .my-lower-footer {
+    color: #bbb;
+}
+
+
+/*
+    =============
+    Team styles
+    =============
+*/
+
+.team-image-holder {
+    height: 220px;
+    width: 220px;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-image-holder img {
+    object-position: center;
+    object-fit: cover;
+}
+
+.team-image-holder .fa {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.team-image-holder .overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+    background: rgba(230,43,30,0.7);
+}
+
+.team-image-holder .overlay .social-links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    letter-spacing: 0.55rem;
+    transition: letter-spacing 0.4s ease-out;
+}
+
+@media screen and (min-width: 768px) {
+    .team-image-holder:hover .overlay {
+        opacity: 1;
+    }
+    
+    .team-image-holder:hover .overlay .social-links{
+        letter-spacing: 0.3rem;
+    }   
+}
+
+.team-info-article h5 {
+    font-weight: 200;
+}
+
+.team-image-holder .lower-overlay {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    height: 40px;
+    padding-top: 7px;
+    letter-spacing:  0.3rem;
+    background: rgba(0,0,0,0.5);
+}
+
+.team-image-holder .lower-overlay .fa{
+    font-size: 1.2em;
+}
