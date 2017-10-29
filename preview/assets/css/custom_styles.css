@@ -1,3 +1,8 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /*
     ==========
     Typography
@@ -8,9 +13,20 @@
     font-weight: 200;
 }
 .font-tedx-red {
-    color: #e62b1e;
+    color: #ff2b06;
 }
 
+@media screen and (max-width: 576px) {
+    .display-4 {
+        font-size: 3rem;
+    }   
+}
+
+@media screen and (max-width: 346px) {
+    .display-4 {
+        font-size: 2.5em;
+    }   
+}
 
 /*  =============
     Navbar styles
@@ -24,7 +40,7 @@
 }
 
 .navbar-dark .navbar-text .fa:hover {
-    color: #e62b1e;
+    color: #ff2b06;
 }
 
 
@@ -34,6 +50,8 @@
 */
 .my-landing-page-container{
     height: 91vh;
+    min-height: 500px;
+
     position: relative;
 }
 
@@ -51,6 +69,20 @@
 .landing-text {
     border: 4px solid #fff;
     padding: 1rem;
+}
+
+.landing-title {
+    font-size: 3.5rem;
+}
+
+@media screen and (max-width: 362px) {
+    .my-landing-page h1 {
+        font-size: 2.3rem;
+    }
+    
+    .display-4 {
+        font-size: 3rem;
+    }   
 }
 
 /*
@@ -73,12 +105,25 @@
 }
 
 #countdown-clock .count:hover {
-    color: #e62b1e;
+    color: #ff2b06;
 }
 
 #countdown-clock .unit {
     color: #ccc;
 }
+
+
+/* 
+    ====================
+    What is TEDx styles?
+    ====================
+*/
+
+.what-is-tedx {
+    background: #ff2b06;
+    color: #fff
+}
+
 
 /*
     ============
@@ -92,8 +137,10 @@
 }
 
 .theme-image-holder img {
-    object-fit: cover;
-    object-position: top;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
 }
 
 
@@ -106,7 +153,7 @@
     background: #000;
 }
 .my-row-feature h2 {
-    color: #e62b1e;
+    color: #ff2b06;
 }
 .my-row-feature p{
     color: #fff;
@@ -120,19 +167,21 @@
 */
 
 .my-article-row .btn {
-    color: #e62b1e;
-    border-color: #e62b1e;
+    color: #ff2b06;
+    border-color: #ff2b06;
     border-radius: 10rem;
 }
 
 .my-article-row .btn:hover {
     color: #fff;
-    background-color: #e62b1e;
+    background-color: #ff2b06;
 }
 
 .my-article-image img {
-    object-position: center;
-    object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .my-article-row {
@@ -155,7 +204,7 @@
 }
 
 .speaker-columns > div {
-    border: 2px solid #e62b1e;
+    border: 2px solid #ff2b06;
     color: #fff;
     padding: 15px;
 }
@@ -166,8 +215,10 @@
 }
 
 .speaker-image-holder img {
-    object-position: center;
-    object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .speaker-columns h5 {
@@ -181,13 +232,22 @@
 }
 
 .speaker-columns .fa:hover {
-    color: #e62b1e;
+    color: #ff2b06;
 }
 
 .speakers-section {
     background: #000;
 }
 
+.read-more {
+    text-decoration: none;
+    color: #fff;
+}
+
+.read-more:hover {
+    text-decoration: none;
+    color: #ff2b06;
+}
 
 /*
     ==================
@@ -223,10 +283,6 @@
     text-decoration: none;
 }
 
-.my-site-footer img {
-    width: 300px;
-}
-
 .my-site-footer ul {
     list-style: none;
 }
@@ -236,7 +292,7 @@
 }
 
 .my-site-footer a:hover {
-    color: #e62b1e;
+    color: #ff2b06;
     text-decoration: none;
 }
 
@@ -259,8 +315,10 @@
 }
 
 .team-image-holder img {
-    object-position: center;
-    object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .team-image-holder .fa {
@@ -277,6 +335,8 @@
     left: 0;
 
     opacity: 0;
+    -webkit-transition: opacity 0.4s ease-out;
+    -o-transition: opacity 0.4s ease-out;
     transition: opacity 0.4s ease-out;
     background: rgba(230,43,30,0.7);
 }
@@ -285,9 +345,13 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 
     letter-spacing: 0.55rem;
+    -webkit-transition: letter-spacing 0.4s ease-out;
+    -o-transition: letter-spacing 0.4s ease-out;
     transition: letter-spacing 0.4s ease-out;
 }
 

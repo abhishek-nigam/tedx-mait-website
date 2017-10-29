@@ -80,20 +80,20 @@
     
 
     <!-- Landing content -->
-    <div class="container-fluid my-landing-page-container" style="background-image: url(assets/images/placeholders/tedx_sydney.jpg);">
+    <div class="container-fluid my-landing-page-container" style="background-color: #ff2a04; background-image: url(assets/images/placeholders/tedx_sydney.jpg);">
         <div class="row my-landing-page justify-content-center mx-2">
             
             <div class="col-11 col-md-7 col-lg-5 col-xl-4 align-self-center">
                 
                 <div class="landing-text">
-                    <h1 style="font-size: 3.5rem;"><span class="font-tedx-red">TED<sup>x</sup></span>MAIT</h1>
+                    <h1 class="landing-title"><span class="font-tedx-red">TED<sup>x</sup></span>MAIT</h1>
                     <h1>Maharaja Agrasen Institute of Technology</h1>
                     <br>
                     <h1>March 17, 2018</h1>
                 </div><!-- landing-text-->
 
-                <div class="landing-countdown text-center">
-                    <ul id="countdown-clock" class="d-flex justify-content-around pl-0">
+                <div class="landing-countdown text-center d-none">
+                    <ul id="countdown-clock" class="d-flex justify-content-between pl-0">
                         <li><span class="count">0</span><br><span class="unit">Days</span></li><!--
                         --><li><span class="count">0</span><br><span class="unit">Hours</span></li><!--
                         --><li><span class="count">0</span><br><span class="unit">Minutes</span></li><!--
@@ -108,10 +108,10 @@
 
 
     <!-- What is TEDx? -->
-    <article class="container-fluid">
-        <div class="row justify-content-center" style="background: #e62b1e; color: #fff">
+    <article class="container-fluid" id="what-is-tedx-anchor">
+        <div class="row justify-content-center what-is-tedx">
             <div class="col-lg-7 text-center pt-4 pb-2 px-3">
-                <h2 class="display-4">What is TEDx ?</h2>
+                <h2 class="display-4">What is TEDx&nbsp;?</h2>
                 <br>
                 <p class="text-justify">In the spirit of ideas worth spreading, TED has created a program called TEDx. TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. Our event is called TEDx[name], where x = independently organized TED event. At our TEDx[name] event, TED Talks video and live speakers will combine to spark deep discussion and connection in a small group. The TED Conference provides general guidance for the TEDx program, but individual TEDx events, including ours, are self-organized.</p>
             </div>
@@ -122,7 +122,7 @@
 
 
     <!-- Theme content -->
-    <article class="container-fluid">
+    <article class="container-fluid" id="theme-anchor">
         <div class="row justify-content-center">
             <div class="col-lg-7 text-center pt-4 pb-2 px-3">
                 <h2 class="display-4">Theme</h2>
@@ -138,7 +138,7 @@
 
 
     <!-- Speakers -->
-    <section class="container-fluid speakers-section pt-2 pb-5">
+    <section class="container-fluid speakers-section pt-2 pb-5" id="speakers-anchor">
             <div class="container">
 
                 <div class="row justify-content-center my-row-feature">
@@ -163,7 +163,13 @@
                             <a href="#" class="fa fa-instagram" aria-hidden="true"></a>&nbsp;
                             <br><br>
 
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga ipsa quis perferendis eius velit, aliquam pariatur laborum ex atque, cumque minus placeat vel modi at fugiat officia voluptates. Iusto hic inventore maiores obcaecati nemo architecto quo saepe dignissimos corporis, provident dolor tempore, sit illum temporibus deserunt ipsum tenetur id. A!</p>
+                            <a class="d-block d-md-none text-center read-more" data-toggle="collapse" href="#speaker1-info" aria-expanded="false" aria-controls="collapseExample">
+                                Read More <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </a>
+
+                            <div class="collapse d-md-block" id="speaker1-info">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga ipsa quis perferendis eius velit, aliquam pariatur laborum ex atque, cumque minus placeat vel modi at fugiat officia voluptates. Iusto hic inventore maiores obcaecati nemo architecto quo saepe dignissimos corporis, provident dolor tempore, sit illum temporibus deserunt ipsum tenetur id. A!</p>
+                            </div>
                         </div>
                     </div><!-- speaker-columns -->
                     <div class="col-md-6 col-lg-4 speaker-columns">
@@ -179,7 +185,12 @@
                             <a href="#" class="fa fa-instagram" aria-hidden="true"></a>&nbsp;
                             <br><br>
 
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga ipsa quis perferendis eius velit, aliquam pariatur laborum ex atque, cumque minus placeat vel modi at fugiat officia voluptates. Iusto hic inventore maiores obcaecati nemo architecto quo saepe dignissimos corporis, provident dolor tempore, sit illum temporibus deserunt ipsum tenetur id. A!</p>
+                            <a class="d-block d-md-none text-center read-more" data-toggle="collapse" href="#speaker2-info" aria-expanded="false" aria-controls="collapseExample">
+                                Read More <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </a>
+                            <div class="collapse d-md-block" id="speaker2-info">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga ipsa quis perferendis eius velit, aliquam pariatur laborum ex atque, cumque minus placeat vel modi at fugiat officia voluptates. Iusto hic inventore maiores obcaecati nemo architecto quo saepe dignissimos corporis, provident dolor tempore, sit illum temporibus deserunt ipsum tenetur id. A!</p>
+                            </div>
                         </div>
                     </div><!-- speaker-columns -->
                     <div class="col-md-6 col-lg-4 speaker-columns">
@@ -195,7 +206,12 @@
                             <a href="#" class="fa fa-instagram" aria-hidden="true"></a>&nbsp;
                             <br><br>
 
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga ipsa quis perferendis eius velit, aliquam pariatur laborum ex atque, cumque minus placeat vel modi at fugiat officia voluptates. Iusto hic inventore maiores obcaecati nemo architecto quo saepe dignissimos corporis, provident dolor tempore, sit illum temporibus deserunt ipsum tenetur id. A!</p>
+                            <a class="d-block d-md-none text-center read-more" data-toggle="collapse" href="#speaker3-info" aria-expanded="false" aria-controls="collapseExample">
+                                Read More <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </a>
+                            <div class="collapse d-md-block" id="speaker3-info">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga ipsa quis perferendis eius velit, aliquam pariatur laborum ex atque, cumque minus placeat vel modi at fugiat officia voluptates. Iusto hic inventore maiores obcaecati nemo architecto quo saepe dignissimos corporis, provident dolor tempore, sit illum temporibus deserunt ipsum tenetur id. A!</p>
+                            </div>
                         </div>
                     </div><!-- speaker-columns -->
                     <div class="col-md-6 col-lg-4 speaker-columns">
@@ -211,7 +227,12 @@
                             <a href="#" class="fa fa-instagram" aria-hidden="true"></a>&nbsp;
                             <br><br>
 
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga ipsa quis perferendis eius velit, aliquam pariatur laborum ex atque, cumque minus placeat vel modi at fugiat officia voluptates. Iusto hic inventore maiores obcaecati nemo architecto quo saepe dignissimos corporis, provident dolor tempore, sit illum temporibus deserunt ipsum tenetur id. A!</p>
+                            <a class="d-block d-md-none text-center read-more" data-toggle="collapse" href="#speaker4-info" aria-expanded="false" aria-controls="collapseExample">
+                                Read More <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </a>
+                            <div class="collapse d-md-block" id="speaker4-info">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga ipsa quis perferendis eius velit, aliquam pariatur laborum ex atque, cumque minus placeat vel modi at fugiat officia voluptates. Iusto hic inventore maiores obcaecati nemo architecto quo saepe dignissimos corporis, provident dolor tempore, sit illum temporibus deserunt ipsum tenetur id. A!</p>
+                            </div>
                         </div>
                     </div><!-- speaker-columns -->
                     <div class="col-md-6 col-lg-4 speaker-columns">
@@ -227,7 +248,12 @@
                             <a href="#" class="fa fa-instagram" aria-hidden="true"></a>&nbsp;
                             <br><br>
 
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga ipsa quis perferendis eius velit, aliquam pariatur laborum ex atque, cumque minus placeat vel modi at fugiat officia voluptates. Iusto hic inventore maiores obcaecati nemo architecto quo saepe dignissimos corporis, provident dolor tempore, sit illum temporibus deserunt ipsum tenetur id. A!</p>
+                            <a class="d-block d-md-none text-center read-more" data-toggle="collapse" href="#speaker5-info" aria-expanded="false" aria-controls="collapseExample">
+                                Read More <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </a>
+                            <div class="collapse d-md-block" id="speaker5-info">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga ipsa quis perferendis eius velit, aliquam pariatur laborum ex atque, cumque minus placeat vel modi at fugiat officia voluptates. Iusto hic inventore maiores obcaecati nemo architecto quo saepe dignissimos corporis, provident dolor tempore, sit illum temporibus deserunt ipsum tenetur id. A!</p>
+                            </div>
                         </div>
                     </div><!-- speaker-columns -->
                     <div class="col-md-6 col-lg-4 speaker-columns">
@@ -243,7 +269,12 @@
                             <a href="#" class="fa fa-instagram" aria-hidden="true"></a>&nbsp;
                             <br><br>
 
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga ipsa quis perferendis eius velit, aliquam pariatur laborum ex atque, cumque minus placeat vel modi at fugiat officia voluptates. Iusto hic inventore maiores obcaecati nemo architecto quo saepe dignissimos corporis, provident dolor tempore, sit illum temporibus deserunt ipsum tenetur id. A!</p>
+                            <a class="d-block d-md-none text-center read-more" data-toggle="collapse" href="#speaker6-info" aria-expanded="false" aria-controls="collapseExample">
+                                Read More <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </a>
+                            <div class="collapse d-md-block" id="speaker6-info">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga ipsa quis perferendis eius velit, aliquam pariatur laborum ex atque, cumque minus placeat vel modi at fugiat officia voluptates. Iusto hic inventore maiores obcaecati nemo architecto quo saepe dignissimos corporis, provident dolor tempore, sit illum temporibus deserunt ipsum tenetur id. A!</p>
+                            </div>
                         </div>
                     </div><!-- speaker-columns -->
                     <div class="col-md-6 col-lg-4 speaker-columns">
@@ -259,7 +290,12 @@
                             <a href="#" class="fa fa-instagram" aria-hidden="true"></a>&nbsp;
                             <br><br>
 
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga ipsa quis perferendis eius velit, aliquam pariatur laborum ex atque, cumque minus placeat vel modi at fugiat officia voluptates. Iusto hic inventore maiores obcaecati nemo architecto quo saepe dignissimos corporis, provident dolor tempore, sit illum temporibus deserunt ipsum tenetur id. A!</p>
+                            <a class="d-block d-md-none text-center read-more" data-toggle="collapse" href="#speaker7-info" aria-expanded="false" aria-controls="collapseExample">
+                                Read More <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </a>
+                            <div class="collapse d-md-block" id="speaker7-info">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga ipsa quis perferendis eius velit, aliquam pariatur laborum ex atque, cumque minus placeat vel modi at fugiat officia voluptates. Iusto hic inventore maiores obcaecati nemo architecto quo saepe dignissimos corporis, provident dolor tempore, sit illum temporibus deserunt ipsum tenetur id. A!</p>
+                            </div>
                         </div>
                     </div><!-- speaker-columns -->
                     <div class="col-md-6 col-lg-4 speaker-columns">
@@ -275,7 +311,12 @@
                             <a href="#" class="fa fa-instagram" aria-hidden="true"></a>&nbsp;
                             <br><br>
 
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga ipsa quis perferendis eius velit, aliquam pariatur laborum ex atque, cumque minus placeat vel modi at fugiat officia voluptates. Iusto hic inventore maiores obcaecati nemo architecto quo saepe dignissimos corporis, provident dolor tempore, sit illum temporibus deserunt ipsum tenetur id. A!</p>
+                            <a class="d-block d-md-none text-center read-more" data-toggle="collapse" href="#speaker8-info" aria-expanded="false" aria-controls="collapseExample">
+                                Read More <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </a>
+                            <div class="collapse d-md-block" id="speaker8-info">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga ipsa quis perferendis eius velit, aliquam pariatur laborum ex atque, cumque minus placeat vel modi at fugiat officia voluptates. Iusto hic inventore maiores obcaecati nemo architecto quo saepe dignissimos corporis, provident dolor tempore, sit illum temporibus deserunt ipsum tenetur id. A!</p>
+                            </div>
                         </div>
                     </div><!-- speaker-columns -->
                     
@@ -287,7 +328,7 @@
 
 
     <!-- Address and map -->
-    <article class="container-fluid">
+    <article class="container-fluid" id="venue-anchor">
         <div class="row my-address-row">
             <div class="col-md-3 py-4">
                 <h2>Maharaja Agrasen Institute of Technology</h2>
@@ -330,7 +371,7 @@
             <div class="row">
 
                 <div class="col-md-4">
-                    <img src="assets/images/brand/tedxmait_transparent_horizontal.png" alt="TEDxMAIT logo">
+                    <img src="assets/images/brand/tedxmait_transparent_horizontal.png" alt="TEDxMAIT logo" class="w-100">
                 </div>
                 <div class="col-md-4">
                     <p>Contact Us:<br>tedxmait.delhi@gmail.com</p>
@@ -353,11 +394,10 @@
                 </div>
                 <div class="col-md-2">
                     <ul class="pl-0">
-                        <li class="py-1"><a href="#">About TED,TEDx</a></li>
-                        <li class="py-1"><a href="#">Theme</a></li>
-                        <li class="py-1"><a href="#">Speakers</a></li>
-                        <li class="py-1"><a href="#">Venue</a></li>
-                        <li class="py-1"><a href="#">Team</a></li>
+                        <li class="py-1"><a href="./#what-is-tedx-anchor">TEDx</a></li>
+                        <li class="py-1"><a href="./#theme-anchor">Theme</a></li>
+                        <li class="py-1"><a href="./#speakers-anchor">Speakers</a></li>
+                        <li class="py-1"><a href="./#venue-anchor">Venue</a></li>
                     </ul>
                 </div>
 

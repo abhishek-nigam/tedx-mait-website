@@ -1,3 +1,5 @@
+var countdown = document.getElementsByClassName("landing-countdown")[0];
+
 /**
  * =======================
  * Code for countdown timer
@@ -27,6 +29,9 @@ function startTimer(id, deadline) {
         counts[2].innerHTML = timer.minutes;
         counts[3].innerHTML = timer.seconds;
         
+        if(countdown.classList.contains("d-none")) {
+            countdown.classList.remove("d-none");
+        }
 
         // check for end of time
         if(timer.total < 1) {
@@ -41,7 +46,8 @@ function startTimer(id, deadline) {
     }, 1000);
 }
 
-window.onload = function(){
+window.onload = function(){    
     var deadline = new Date("March 17, 2018 10:00:00");
     startTimer("clock",deadline);
-}
+};
+    
