@@ -1,61 +1,111 @@
+/*  =============
+    Global styles
+    =============
+*/
 html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
 
-/*
-    ==========
-    Typography
-    ==========
-*/
-
-.font-wt-200 {
-    font-weight: 200;
+body {
+    margin-top: 71px;
 }
+
+/*  =============
+    Utility classes
+    =============
+*/
 .font-tedx-red {
     color: #ff2b06;
 }
 
-@media screen and (max-width: 576px) {
-    .display-4 {
-        font-size: 3rem;
-    }   
+.font-wt-200 {
+    font-weight: 200;
 }
 
-@media screen and (max-width: 346px) {
-    .display-4 {
-        font-size: 2.5em;
-    }   
+.red-row {
+    background: #ff2b06;
+    color: #fff
 }
+
+.black-row {
+    background: #000;
+    color: #fff;
+}
+
+.black-row h2 {
+    color: #ff2b06;
+}
+
 
 /*  =============
     Navbar styles
     =============
 */
+#top-navbar {
+    background-color: #000;
+}
 
-/* Overriding bootstrap styles */
-.navbar-dark .navbar-text .fa {
+#top-navbar .fa {
     color: #fff;
     text-decoration: none;
 }
 
-.navbar-dark .navbar-text .fa:hover {
+#top-navbar .fa:hover {
     color: #ff2b06;
+}
+
+#top-navbar img {
+    height: 45px;
+}
+
+#top-navbar .navbar-text {
+    font-size: 20px;
+}
+
+
+/*  =============
+    Footer styles
+    =============
+*/
+#bottom-footer {
+    background: #000;
+    color: #fff;
+}
+
+#bottom-footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#bottom-footer a:hover {
+    color: #ff2b06;
+    text-decoration: none;
+}
+
+#bottom-footer ul {
+    list-style: none;
+}
+
+#bottom-footer hr {
+    background-color: #bbb;
 }
 
 
 /*  ===================
-    Landing page styles
+    landing Page styles
     ===================
 */
-.my-landing-page-container{
+#landing-page-container {
+    /* Inline background image and background-color set */
     height: 91vh;
-    min-height: 500px;
+    min-height: 550px;
 
     position: relative;
 }
 
-.my-landing-page {
+#landing-page-container > div {
     position: absolute;
     top: 0;
     left: 0;
@@ -63,40 +113,32 @@ html, body {
     width: 100%;
 
     color: #fff;
-    background: rgba(0,0,0,0.5);
-}
-
-.landing-text {
-    border: 4px solid #fff;
-    padding: 1rem;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .landing-title {
     font-size: 3.5rem;
 }
 
-@media screen and (max-width: 362px) {
-    .my-landing-page h1 {
-        font-size: 2.3rem;
-    }
-    
-    .display-4 {
-        font-size: 3rem;
-    }   
+.landing-box {
+    border: 4px solid #fff;
+    padding: 1rem;
 }
 
-/*
-    ======================
+@media screen and (max-width: 362px) {
+    #landing-page-container > div h1 {
+        font-size: 2.3rem;
+    }
+} 
+
+
+/*  ======================
     Countdown clock styles
     ======================
 */
-
 #countdown-clock {
+    /* display: flex, and justify-content:space-between by BS classes */
     list-style: none;
-}
-
-#countdown-clock li {
-    display: inline-block; 
 }
 
 #countdown-clock .count {
@@ -113,263 +155,156 @@ html, body {
 }
 
 
-/* 
-    ====================
-    What is TEDx styles?
-    ====================
+
+/*  ===============
+    Speakers styles
+    ===============
 */
-
-.what-is-tedx {
-    background: #ff2b06;
-    color: #fff
-}
-
-
-/*
-    ============
-    Theme styles
-    ============
-*/
-
-.theme-image-holder {
-    width: 100%;
-    height: 350px;
-}
-
-.theme-image-holder img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: top;
-       object-position: top;
-}
-
-
-/*  ==================
-    Feature row styles
-    ==================
-*/
-
-.my-row-feature {
+.speakers-section {
     background: #000;
 }
-.my-row-feature h2 {
-    color: #ff2b06;
-}
-.my-row-feature p{
-    color: #fff;
-}
-
-
-/*
-    ==================
-    Article Row Styles
-    ==================
-*/
-
-.my-article-row .btn {
-    color: #ff2b06;
-    border-color: #ff2b06;
-    border-radius: 10rem;
-}
-
-.my-article-row .btn:hover {
-    color: #fff;
-    background-color: #ff2b06;
-}
-
-.my-article-image img {
-    -o-object-position: center;
-       object-position: center;
-    -o-object-fit: cover;
-       object-fit: cover;
-}
-
-.my-article-row {
-    width: 100%;
-}
-
-.my-article-row:last-child {
-    border-bottom: 0;
-}
-
-
-/*
-    =============
-    Speaker styles
-    =============
-*/
 
 .speaker-columns {
     padding: 10px;
+    color: #fff;
 }
 
 .speaker-columns > div {
     border: 2px solid #ff2b06;
-    color: #fff;
     padding: 15px;
 }
 
-.speaker-columns .speaker-image-holder {
+.speaker-image-holder {
     height: 300px;
     width: 100%;
 }
 
 .speaker-image-holder img {
-    -o-object-position: center;
-       object-position: center;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-position: center;
+    object-fit: cover;
 }
 
 .speaker-columns h5 {
     font-weight: 200;
 }
 
+.speaker-columns a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.speaker-columns a:hover {
+    color: #ff2b06;
+    text-decoration: none;
+}
+
 .speaker-columns .fa {
     font-size: 1.3rem;
-    color: #fff;
-    text-decoration: none;
 }
 
-.speaker-columns .fa:hover {
-    color: #ff2b06;
-}
 
-.speakers-section {
-    background: #000;
-}
-
-.read-more {
-    text-decoration: none;
-    color: #fff;
-}
-
-.read-more:hover {
-    text-decoration: none;
-    color: #ff2b06;
-}
-
-/*
-    ==================
+/*  ==================
     Address row styles
     ==================
 */
-
-.my-address-row {
+#address-row {
     height: 100vh;
 }
 
-.my-address-row h2 {
+#address-row h2 {
     font-weight: 200;
 }
 
-.my-address-row .map-holder {
-    min-height: 50vh;
+#address-row .map-holder {
+    min-height: 300px;
 }
 
-/*
-    =============
-    Footer styles
-    =============
+
+
+/*  ==================
+    Article row styles
+    ==================
 */
 
-.my-site-footer {
-    background: #000;
-    color: #fff;
-}
-
-.my-site-footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.my-site-footer ul {
-    list-style: none;
-}
-
-.my-site-footer a {
-    font-size: 20px;
-}
-
-.my-site-footer a:hover {
+.article-row .btn {
     color: #ff2b06;
-    text-decoration: none;
+    border-color: #ff2b06;
+    border-radius: 10rem;
 }
 
-.my-site-footer .my-lower-footer {
-    color: #bbb;
+.article-row .btn:hover {
+    color: #fff;
+    background: #ff2b06;
 }
 
+.article-image-holder img {
+    object-position: center;
+    object-fit: cover;
+}
 
-/*
-    =============
+.article-row:last-child {
+    border-bottom: 0;
+}
+
+/*  ===========
     Team styles
-    =============
+    ===========
 */
-
-.team-image-holder {
-    height: 220px;
-    width: 220px;
+.member-image-holder {
+    height: 200px;
+    width: 200px;
     position: relative;
     overflow: hidden;
 }
 
-.team-image-holder img {
-    -o-object-position: center;
-       object-position: center;
-    -o-object-fit: cover;
-       object-fit: cover;
+.member-image-holder img {
+    object-position: center;
+    object-fit: cover;
 }
 
-.team-image-holder .fa {
+.member-image-holder .fa {
     color: #fff;
     text-decoration: none;
     font-size: 1.5rem;
 }
 
-.team-image-holder .overlay {
+.member-image-holder .overlay {
     height: 100%;
     width: 100%;
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
 
     opacity: 0;
-    -webkit-transition: opacity 0.4s ease-out;
-    -o-transition: opacity 0.4s ease-out;
     transition: opacity 0.4s ease-out;
     background: rgba(230,43,30,0.7);
 }
 
-.team-image-holder .overlay .social-links {
+.member-image-holder .overlay .social-links {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
 
-    letter-spacing: 0.55rem;
-    -webkit-transition: letter-spacing 0.4s ease-out;
-    -o-transition: letter-spacing 0.4s ease-out;
+    letter-spacing: 0.44rem;
     transition: letter-spacing 0.4s ease-out;
 }
 
 @media screen and (min-width: 768px) {
-    .team-image-holder:hover .overlay {
+    .member-image-holder:hover .overlay {
         opacity: 1;
     }
-    
-    .team-image-holder:hover .overlay .social-links{
+
+    .member-image-holder:hover .overlay .social-links {
         letter-spacing: 0.3rem;
-    }   
+    }
 }
 
-.team-info-article h5 {
+.member-info h5 {
     font-weight: 200;
 }
 
-.team-image-holder .lower-overlay {
+.member-image-holder .lower-overlay {
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -377,10 +312,10 @@ html, body {
 
     height: 40px;
     padding-top: 7px;
-    letter-spacing:  0.3rem;
-    background: rgba(0,0,0,0.5);
+    letter-spacing: 0.3rem;
+    background: rgba(0, 0, 0, 0.5);
 }
 
-.team-image-holder .lower-overlay .fa{
-    font-size: 1.2em;
+.member-image-holder .lower-overlay .fa {
+    font-size: 1.2rem;
 }
