@@ -1,0 +1,328 @@
+/*  =============
+    Global styles
+    =============
+*/
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin-top: 71px;
+}
+
+/*  =============
+    Utility classes
+    =============
+*/
+.font-tedx-red {
+    color: #ff2b06;
+}
+
+.font-wt-200 {
+    font-weight: 200;
+}
+
+.red-row {
+    background: #ff2b06;
+    color: #fff
+}
+
+.black-row {
+    background: #000;
+    color: #fff;
+}
+
+.black-row h2 {
+    color: #ff2b06;
+}
+
+.revealing-soon {
+    font-weight: 200;
+}
+
+.revealing-soon span {
+    border-bottom: 1px solid #ff2b06;
+}
+
+/*  =============
+    Navbar styles
+    =============
+*/
+#top-navbar {
+    background-color: #000;
+}
+
+#top-navbar .fa {
+    color: #fff;
+    text-decoration: none;
+}
+
+#top-navbar .fa:hover {
+    color: #ff2b06;
+}
+
+#top-navbar img {
+    height: 45px;
+}
+
+#top-navbar .navbar-text {
+    font-size: 20px;
+}
+
+
+/*  =============
+    Footer styles
+    =============
+*/
+#bottom-footer {
+    background: #000;
+    color: #fff;
+}
+
+#bottom-footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#bottom-footer a:hover {
+    color: #ff2b06;
+    text-decoration: none;
+}
+
+#bottom-footer ul {
+    list-style: none;
+}
+
+#bottom-footer hr {
+    background-color: #bbb;
+}
+
+
+/*  ===================
+    landing Page styles
+    ===================
+*/
+#landing-page-container {
+    /* Inline background image and background-color set */
+    height: 91vh;
+    min-height: 550px;
+
+    position: relative;
+}
+
+#landing-page-container > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.landing-title {
+    font-size: 3.5rem;
+}
+
+.landing-box {
+    border: 4px solid #fff;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 362px) {
+    #landing-page-container > div h1 {
+        font-size: 2.3rem;
+    }
+} 
+
+
+/*  ======================
+    Countdown clock styles
+    ======================
+*/
+#countdown-clock {
+    /* display: flex, and justify-content:space-between by BS classes */
+    list-style: none;
+}
+
+#countdown-clock .count {
+    color: #fff;
+    font-size: 3rem;
+}
+
+#countdown-clock .count:hover {
+    color: #ff2b06;
+}
+
+#countdown-clock .unit {
+    color: #ccc;
+}
+
+
+
+/*  ===============
+    Speakers styles
+    ===============
+*/
+.speakers-section {
+    background: #000;
+}
+
+.speaker-columns {
+    padding: 10px;
+    color: #fff;
+}
+
+.speaker-columns > div {
+    border: 2px solid #ff2b06;
+    padding: 15px;
+}
+
+.speaker-image-holder {
+    height: 300px;
+    width: 100%;
+}
+
+.speaker-image-holder img {
+    object-position: center;
+    object-fit: cover;
+}
+
+.speaker-columns h5 {
+    font-weight: 200;
+}
+
+.speaker-columns a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.speaker-columns a:hover {
+    color: #ff2b06;
+    text-decoration: none;
+}
+
+.speaker-columns .fa {
+    font-size: 1.3rem;
+}
+
+
+/*  ==================
+    Address row styles
+    ==================
+*/
+#address-row {
+    height: 100vh;
+}
+
+#address-row h2 {
+    font-weight: 200;
+}
+
+#address-row .map-holder {
+    min-height: 300px;
+}
+
+
+
+/*  ==================
+    Article row styles
+    ==================
+*/
+
+.article-row .btn {
+    color: #ff2b06;
+    border-color: #ff2b06;
+    border-radius: 10rem;
+}
+
+.article-row .btn:hover {
+    color: #fff;
+    background: #ff2b06;
+}
+
+.article-image-holder img {
+    object-position: center;
+    object-fit: cover;
+}
+
+.article-row:last-child {
+    border-bottom: 0;
+}
+
+/*  ===========
+    Team styles
+    ===========
+*/
+.member-image-holder {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.member-image-holder img {
+    object-position: center;
+    object-fit: cover;
+}
+
+.member-image-holder .fa {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.member-image-holder .overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+    background: rgba(230,43,30,0.7);
+}
+
+.member-image-holder .overlay .social-links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    letter-spacing: 0.44rem;
+    transition: letter-spacing 0.4s ease-out;
+}
+
+@media screen and (min-width: 768px) {
+    .member-image-holder:hover .overlay {
+        opacity: 1;
+    }
+
+    .member-image-holder:hover .overlay .social-links {
+        letter-spacing: 0.3rem;
+    }
+}
+
+.member-info h5 {
+    font-weight: 200;
+}
+
+.member-image-holder .lower-overlay {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    height: 40px;
+    padding-top: 7px;
+    letter-spacing: 0.3rem;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.member-image-holder .lower-overlay .fa {
+    font-size: 1.2rem;
+}
