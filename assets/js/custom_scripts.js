@@ -41,10 +41,10 @@ function startTimer(id, deadline) {
         if(timer.total < 1) {
             clearInterval(timerInterval);
             
-            counts[0].innerHTML = timer.days;
-            counts[1].innerHTML = timer.hours;
-            counts[2].innerHTML = timer.minutes;
-            counts[3].innerHTML = timer.seconds;
+            counts[0].innerHTML = timer.days < 0 ? 0 : timer.days;
+            counts[1].innerHTML = timer.hours < 0 ? 0 : timer.hours;
+            counts[2].innerHTML = timer.minutes < 0 ? 0 : timer.minutes;
+            counts[3].innerHTML = timer.seconds < 0 ? 0 : timer.seconds;
 
         }
     }, 1000);
