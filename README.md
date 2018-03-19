@@ -2,7 +2,7 @@
 This is source for TEDxMAIT's website that was held on 17 March 2018.
 <br>
 <br>
-Check out the website [here.](www.tedxmait.com)
+Check out the website [here.](http://www.tedxmait.com)
 
 ### Dependencies
 This project uses the following :
